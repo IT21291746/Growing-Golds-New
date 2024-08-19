@@ -47,9 +47,9 @@ const Main = () => {
             </div>
           </div>
 
-          <div class="image_section">
+          {/* <div class="image_section">
             <img src="images/cofffee_image.png" alt="Coffee" />
-          </div>
+          </div> */}
         </div>
       </div>
     </section>

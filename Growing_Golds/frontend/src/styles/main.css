@@ -11,8 +11,8 @@
 /* Defining Custome Variables */
 :root {
     /* Colors */
-    --primary-color: #009e25;
-    --secondary-color: #032342;
+    --primary-color: #16c63f;
+    --secondary-color: #0c65b3;
     --dark-color: #252525;
     --white-color: #fff;
     --light-gray-color: #f2f2f2;
@@ -133,7 +133,11 @@ label .close_btn {
 /* Hero Section */
 .hero_section {
     min-height: 100vh;
-    background: var(--primary-color);
+    /* background: var(--primary-color); */
+    background-image: url(../../public/images/invest.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
 }
 
 .hero_container {
@@ -353,13 +357,13 @@ label .close_btn {
 
 /* Contact Section */
 .contact {
-    background: var(--light-gray-color);
+    background: var(--white-color);
     padding: 60px 20px 100px;
 }
 
 .contact_container {
     display: flex;
-    gap: 50px;
+    gap: 30px;
     align-items: center;
     justify-content: space-between;
 }
