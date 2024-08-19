@@ -68,22 +68,22 @@ const Investor = () => {
                     <h2>Personal Information</h2>
                     <div className="luxury-group">
                         <label>Full Name</label>
-                        <input type="text" name="fullName" value={formData.fullName} onChange={handleChange} required />
+                        <input placeholder='Your Full Name' type="text" name="fullName" value={formData.fullName} onChange={handleChange} required />
                     </div>
 
                     <div className="luxury-group">
                         <label>Email Address</label>
-                        <input type="email" name="email" value={formData.email} onChange={handleChange} required />
+                        <input placeholder='Your Email Address' type="email" name="email" value={formData.email} onChange={handleChange} required />
                     </div>
 
                     <div className="luxury-group">
                         <label>Phone Number</label>
-                        <input type="tel" name="phone" value={formData.phone} onChange={handleChange} required />
+                        <input placeholder='Your Phone Number' type="tel" name="phone" value={formData.phone} onChange={handleChange} required />
                     </div>
 
                     <div className="luxury-group">
                         <label>LinkedIn Profile</label>
-                        <input type="url" name="linkedin" value={formData.linkedin} onChange={handleChange} />
+                        <input placeholder='Your LinkedIn Profile' type="url" name="linkedin" value={formData.linkedin} onChange={handleChange} />
                     </div>
 
                     <div className="luxury-group">
@@ -102,12 +102,12 @@ const Investor = () => {
                     <h2>Business Information</h2>
                     <div className="luxury-group">
                         <label>Business Name</label>
-                        <input type="text" name="businessName" value={formData.businessName} onChange={handleChange} required />
+                        <input placeholder='Your Business Name' type="text" name="businessName" value={formData.businessName} onChange={handleChange} required />
                     </div>
 
                     <div className="luxury-group">
                         <label>Business Website</label>
-                        <input type="url" name="businessWebsite" value={formData.businessWebsite} onChange={handleChange} required />
+                        <input placeholder='Your Business Website' type="url" name="businessWebsite" value={formData.businessWebsite} onChange={handleChange} required />
                     </div>
 
                     <div className="luxury-group">
@@ -122,7 +122,7 @@ const Investor = () => {
 
                     <div className="luxury-group">
                         <label>Other</label>
-                        <input type="text" name="industryOther" value={formData.industryOther} onChange={handleChange} />
+                        <input placeholder='Other Business Industry' type="text" name="industryOther" value={formData.industryOther} onChange={handleChange} />
                     </div>
 
                     <div className="luxury-group">
@@ -137,12 +137,12 @@ const Investor = () => {
 
                     <div className="luxury-group">
                         <label>Description of Business</label>
-                        <textarea name="description" value={formData.description} onChange={handleChange} required />
+                        <textarea placeholder='Description of Your Business' name="description" value={formData.description} onChange={handleChange} required />
                     </div>
 
                     <div className="luxury-group">
                         <label>Unique Value Proposition</label>
-                        <textarea name="uniqueValue" value={formData.uniqueValue} onChange={handleChange} required />
+                        <textarea placeholder='Unique Value Proposition' name="uniqueValue" value={formData.uniqueValue} onChange={handleChange} required />
                     </div>
                 </div>
 
@@ -170,12 +170,12 @@ const Investor = () => {
 
                     <div className="luxury-group">
                         <label>Other</label>
-                        <input type="text" name="fundingPurposeOther" value={formData.fundingPurposeOther} onChange={handleChange} />
+                        <input placeholder='Other Intended Use of Funds' type="text" name="fundingPurposeOther" value={formData.fundingPurposeOther} onChange={handleChange} />
                     </div>
 
                     <div className="luxury-group">
                         <label>Current Funding Status</label>
-                        <textarea name="fundingStatus" value={formData.fundingStatus} onChange={handleChange} required />
+                        <textarea placeholder='Current Funding Status' name="fundingStatus" value={formData.fundingStatus} onChange={handleChange} required />
                     </div>
 
                     <div className="luxury-group">
@@ -193,12 +193,12 @@ const Investor = () => {
                     <h2>Additional Information</h2>
                     <div className="luxury-group">
                         <label>Primary Motivations for Seeking Investment</label>
-                        <textarea name="motivation" value={formData.motivation} onChange={handleChange} required />
+                        <textarea placeholder='Your Primary Motivations for Seeking Investment' name="motivation" value={formData.motivation} onChange={handleChange} required />
                     </div>
 
                     <div className="luxury-group">
                         <label>Biggest Challenges Your Business Currently Faces</label>
-                        <textarea name="challenges" value={formData.challenges} onChange={handleChange} required />
+                        <textarea placeholder='Biggest Challenges Your Business Currently Faces' name="challenges" value={formData.challenges} onChange={handleChange} required />
                     </div>
 
                     <div className="luxury-group">
@@ -212,14 +212,14 @@ const Investor = () => {
                     </div>
 
                     <div className="luxury-group">
-                        <label>Any other information you’d like to share with us?</label>
-                        <textarea name="additionalInfo" value={formData.additionalInfo} onChange={handleChange} />
+                        <label>Any other information you’d like to share with us</label>
+                        <textarea placeholder='Additional Information' name="additionalInfo" value={formData.additionalInfo} onChange={handleChange} />
                     </div>
                 </div>
 
                 <div className="luxury-fieldset">
                     <h2>Terms and Conditions</h2>
-                    <div className="luxury-group">
+                    <div className="luxury-group d-inline-flex align-items-center">
                         <input type="checkbox" name="terms" checked={formData.terms} onChange={handleChange} required />
                         <label>I agree to the terms and conditions of the Harvester</label>
                     </div>

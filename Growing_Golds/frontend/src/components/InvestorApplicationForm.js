@@ -70,22 +70,22 @@ const InvestorApplicationForm = () => {
                     <h2>Personal Information</h2>
                     <div className="luxury-group">
                         <label>Full Name</label>
-                        <input type="text" name="fullName" value={formData.fullName} onChange={handleChange} required />
+                        <input placeholder='Your Full Name' type="text" name="fullName" value={formData.fullName} onChange={handleChange} required />
                     </div>
 
                     <div className="luxury-group">
                         <label>Email Address</label>
-                        <input type="email" name="email" value={formData.email} onChange={handleChange} required />
+                        <input placeholder='Your Email Address' type="email" name="email" value={formData.email} onChange={handleChange} required />
                     </div>
 
                     <div className="luxury-group">
                         <label>Phone Number</label>
-                        <input type="tel" name="phone" value={formData.phone} onChange={handleChange} required />
+                        <input placeholder='Your Phone Number' type="tel" name="phone" value={formData.phone} onChange={handleChange} required />
                     </div>
 
                     <div className="luxury-group">
                         <label>LinkedIn Profile</label>
-                        <input type="url" name="linkedin" value={formData.linkedin} onChange={handleChange} />
+                        <input placeholder='Your LinkedIn Profile' type="url" name="linkedin" value={formData.linkedin} onChange={handleChange} />
                     </div>
 
                     <div className="luxury-group">
@@ -114,7 +114,7 @@ const InvestorApplicationForm = () => {
 
                     <div className="luxury-group">
                         <label>Other</label>
-                        <input type="text" name="investmentFocusOther" value={formData.investmentFocusOther} onChange={handleChange} />
+                        <input placeholder='Other Investment Focus Areas' type="text" name="investmentFocusOther" value={formData.investmentFocusOther} onChange={handleChange} />
                     </div>
 
                     <div className="luxury-group">
@@ -152,22 +152,22 @@ const InvestorApplicationForm = () => {
                     <h2>Background and Experience</h2>
                     <div className="luxury-group">
                         <label>Professional Background</label>
-                        <textarea name="professionalBackground" value={formData.professionalBackground} onChange={handleChange} required />
+                        <textarea placeholder='Your Professional Background' name="professionalBackground" value={formData.professionalBackground} onChange={handleChange} required />
                     </div>
 
                     <div className="luxury-group">
                         <label>Relevant Experience in Investing</label>
-                        <textarea name="investingExperience" value={formData.investingExperience} onChange={handleChange} />
+                        <textarea placeholder='Your Experience in Investing' name="investingExperience" value={formData.investingExperience} onChange={handleChange} />
                     </div>
 
                     <div className="luxury-group">
                         <label>Industries of Expertise</label>
-                        <textarea name="expertiseIndustries" value={formData.expertiseIndustries} onChange={handleChange} />
+                        <textarea placeholder='Industries of Expertise' name="expertiseIndustries" value={formData.expertiseIndustries} onChange={handleChange} />
                     </div>
 
                     <div className="luxury-group">
                         <label>Memberships and Affiliations</label>
-                        <textarea name="memberships" value={formData.memberships} onChange={handleChange} />
+                        <textarea placeholder='Memberships and Affiliations' name="memberships" value={formData.memberships} onChange={handleChange} />
                     </div>
                 </div>
 
@@ -175,7 +175,7 @@ const InvestorApplicationForm = () => {
                     <h2>Additional Information</h2>
                     <div className="luxury-group">
                         <label>What are your primary motivations for investing?</label>
-                        <textarea name="investmentMotivation" value={formData.investmentMotivation} onChange={handleChange} />
+                        <textarea placeholder='Your Primary Motivations for Investing' name="investmentMotivation" value={formData.investmentMotivation} onChange={handleChange} />
                     </div>
 
                     <div className="luxury-group">
@@ -190,18 +190,18 @@ const InvestorApplicationForm = () => {
 
                     <div className="luxury-group">
                         <label>Are there any specific criteria or conditions you look for in an investment opportunity?</label>
-                        <textarea name="investmentCriteria" value={formData.investmentCriteria} onChange={handleChange} />
+                        <textarea placeholder='investment opportunity' name="investmentCriteria" value={formData.investmentCriteria} onChange={handleChange} />
                     </div>
 
                     <div className="luxury-group">
                         <label>Any other information you’d like to share with us?</label>
-                        <textarea name="additionalInfo" value={formData.additionalInfo} onChange={handleChange} />
+                        <textarea placeholder='Additional Information' name="additionalInfo" value={formData.additionalInfo} onChange={handleChange} />
                     </div>
                 </div>
 
-                <div className="luxury-fieldset">
+                <div className="luxury-fieldset ">
                     <h2>Terms and Conditions</h2>
-                    <div className="luxury-group">
+                    <div className="luxury-group d-inline-flex align-items-center">
                         <input type="checkbox" name="terms" checked={formData.terms} onChange={handleChange} required />
                         <label>I agree to the terms and conditions</label>
                     </div>
