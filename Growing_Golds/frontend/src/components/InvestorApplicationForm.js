@@ -60,6 +60,7 @@ const InvestorApplicationForm = () => {
     };
 
     return (
+        <div className='main-div-form'>
         <div className='luxury-container'>
             <form onSubmit={handleSubmit} className="luxury-form">
                 <h1>Investor Application Form</h1>
@@ -210,6 +211,7 @@ const InvestorApplicationForm = () => {
                 {submissionMessage && <p className="success-message">{submissionMessage}</p>}
                 {error && <p className="error-message">{error}</p>}
             </form>
+        </div>
         </div>
     );
 };

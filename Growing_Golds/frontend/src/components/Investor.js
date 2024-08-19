@@ -58,6 +58,7 @@ const Investor = () => {
         }
     };
     return (
+        <div className='main-div-form'>
         <div className='luxury-container'>
             <form onSubmit={handleSubmit} className="luxury-form">
                 <h1>Investment Seeker Application Form</h1>
@@ -226,6 +227,7 @@ const Investor = () => {
 
                 <button type="submit" className="luxury-submit-btn">Submit</button>
             </form>
+        </div>
         </div>
     );
 };
